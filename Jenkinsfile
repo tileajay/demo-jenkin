@@ -1,21 +1,17 @@
-Pipeline{
-    agent any
-    
-  stages{
-    stage("build"){
-      steps{
-        echo 'builing...'
+pipeline {
+  agent any
+
+  stages {
+    stage("Build") {
+      steps {
+        echo 'build'
       }
     }
-      
-       stage("test"){
-      steps{
-        echo 'testing...'
+
+    stage("Test") {
+      steps {
+        echo 'test'
       }
+    }
   }
-       stage("deploy"){
-      steps{
-        echo 'deploying...'
-      }
-  
 }
